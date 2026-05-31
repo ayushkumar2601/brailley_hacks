@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>Natural_Braille_Character</folder>
+	<filename>520_0</filename>
+	<size>
+		<width>88</width>
+		<height>60</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>56</name>
+		<pose>Rear</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>5</xmin>
+			<ymin>4</ymin>
+			<xmax>36</xmax>
+			<ymax>52</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>29</name>
+		<pose>Rear</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>50</xmin>
+			<ymin>6</ymin>
+			<xmax>79</xmax>
+			<ymax>51</ymax>
+		</bndbox>
+	</object>
+</annotation>

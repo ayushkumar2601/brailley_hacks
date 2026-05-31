@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>Natural_Braille_Character</folder>
+	<filename>48_2</filename>
+	<size>
+		<width>121</width>
+		<height>60</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>60</name>
+		<pose>Rear</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>90</xmin>
+			<ymin>7</ymin>
+			<xmax>116</xmax>
+			<ymax>50</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>16</name>
+		<pose>Rear</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>48</xmin>
+			<ymin>9</ymin>
+			<xmax>75</xmax>
+			<ymax>51</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>47</name>
+		<pose>Rear</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>5</xmin>
+			<ymin>9</ymin>
+			<xmax>35</xmax>
+			<ymax>53</ymax>
+		</bndbox>
+	</object>
+</annotation>

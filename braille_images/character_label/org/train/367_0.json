@@ -1,0 +1,107 @@
+{
+  "version": "3.16.5",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "145",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          147.6,
+          11.700000000000003
+        ],
+        [
+          175.1,
+          54.8
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          192.6,
+          12.299999999999997
+        ],
+        [
+          218.8,
+          54.3
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          101.3,
+          11.399999999999999
+        ],
+        [
+          128.4,
+          53.7
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "3",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          54.1,
+          14.200000000000003
+        ],
+        [
+          81.7,
+          56.900000000000006
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "3",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          9.9,
+          14.799999999999997
+        ],
+        [
+          34.5,
+          56.599999999999994
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "367_0.jpg",
+  "imageData": "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",
+  "imageHeight": 60,
+  "imageWidth": 227
+}

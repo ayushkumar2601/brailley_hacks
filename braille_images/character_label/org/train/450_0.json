@@ -1,0 +1,90 @@
+{
+  "version": "3.16.5",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "124",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          5.699999999999999,
+          7.799999999999997
+        ],
+        [
+          37.7,
+          56.599999999999994
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "346",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          52.3,
+          8.200000000000003
+        ],
+        [
+          85.2,
+          57.599999999999994
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "135",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          95.9,
+          7.600000000000001
+        ],
+        [
+          130.4,
+          56.2
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "46",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          147.5,
+          7.299999999999997
+        ],
+        [
+          177.7,
+          56.7
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "450_0.jpg",
+  "imageData": "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",
+  "imageHeight": 60,
+  "imageWidth": 184
+}

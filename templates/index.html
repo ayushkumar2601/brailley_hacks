@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrailleScan — AI Braille Reader</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────────────────────── -->
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-dots">
+        <span class="logo-dot"></span><span class="logo-dot"></span>
+        <span class="logo-dot"></span><span class="logo-dot"></span>
+        <span class="logo-dot"></span><span class="logo-dot"></span>
+      </div>
+      <span class="logo-title">Braille<strong>Scan</strong></span>
+      <span class="logo-tag">AI</span>
+    </div>
+    <div class="header-status">
+      <span id="status-badge" class="badge badge-starting">Starting…</span>
+      <span id="stats-label" class="stats-label">—</span>
+      <div class="header-indicators">
+        <span id="ind-groq" class="indicator" title="Groq AI correction">AI</span>
+        <span id="ind-cnn"  class="indicator" title="CNN model">CNN</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── Main layout ─────────────────────────────────────────────────────────── -->
+<main>
+
+  <!-- ── Left: camera + upload ─────────────────────────────────────────────── -->
+  <section class="panel panel-camera" aria-label="Camera feed">
+    <div class="panel-header">
+      <h2>Live Camera</h2>
+      <div class="cam-controls">
+        <button id="btn-camera"  class="btn btn-primary"   onclick="startBrowserCamera()">📷 Allow Camera</button>
+        <button id="btn-upload"  class="btn btn-secondary" onclick="triggerUpload()">📁 Upload Image</button>
+        <button id="btn-pause"   class="btn btn-secondary" onclick="togglePause()">⏸ Pause</button>
+        <button class="btn btn-ghost" onclick="clearHistory()">🗑</button>
+      </div>
+    </div>
+
+    <!-- Hidden file input for upload -->
+    <input type="file" id="file-input" accept="image/*" style="display:none" onchange="handleUpload(event)" />
+
+    <div class="camera-wrap">
+      <video id="webcam-video" autoplay playsinline muted style="display:none" aria-hidden="true"></video>
+      <canvas id="webcam-canvas" style="display:none" aria-hidden="true"></canvas>
+      <img id="camera-img" src="" alt="Camera feed" aria-live="polite" />
+      <div id="no-camera" class="no-camera-msg">
+        <div class="no-camera-icon">⠿</div>
+        <p>Click <strong>Allow Camera</strong> to start live scanning<br>
+        or <strong>Upload Image</strong> to process a photo.</p>
+        <small>Video only — no microphone needed.</small>
+      </div>
+      <!-- Upload overlay (shown while processing) -->
+      <div id="upload-overlay" class="upload-overlay" style="display:none">
+        <div class="upload-spinner"></div>
+        <p>Processing image…</p>
+      </div>
+    </div>
+
+    <!-- Confidence meter -->
+    <div class="confidence-bar-wrap">
+      <span class="conf-label">Confidence</span>
+      <div class="confidence-bar">
+        <div id="conf-fill" class="conf-fill" style="width:0%"></div>
+      </div>
+      <span id="conf-pct" class="conf-pct">0%</span>
+    </div>
+
+    <!-- Quality indicator bar -->
+    <div class="quality-bar">
+      <div class="quality-item">
+        <span class="q-label">Quality</span>
+        <span id="q-quality" class="q-value">—</span>
+      </div>
+      <div class="quality-item">
+        <span class="q-label">Dots</span>
+        <span id="q-dots" class="q-value">0</span>
+      </div>
+      <div class="quality-item">
+        <span class="q-label">Frames</span>
+        <span id="q-frames" class="q-value">0</span>
+      </div>
+      <div class="quality-item">
+        <span class="q-label">Braille</span>
+        <span id="q-braille-frames" class="q-value">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Right: text output + controls ─────────────────────────────────────── -->
+  <section class="panel panel-text" aria-label="Recognised text and controls">
+
+    <!-- Last detected text -->
+    <div class="last-text-box" aria-live="polite" aria-atomic="true">
+      <div class="last-text-label">Last recognised</div>
+      <div id="last-text" class="last-text-value">Waiting for braille…</div>
+      <div id="ai-badge" class="ai-correction-badge" style="display:none">✨ AI corrected</div>
+    </div>
+
+    <!-- Manual speak -->
+    <div class="manual-speak">
+      <input id="manual-input" type="text" placeholder="Type text to speak…"
+             aria-label="Type text to speak aloud"
+             onkeydown="if(event.key==='Enter') speakManual()" />
+      <button class="btn btn-primary" onclick="speakManual()">🔊 Speak</button>
+    </div>
+
+    <!-- Action buttons -->
+    <div class="action-row">
+      <button class="btn btn-secondary" onclick="runDemo('hello')">🧪 Demo</button>
+      <button class="btn btn-secondary" onclick="speakHistory()">📖 Read All</button>
+      <button class="btn btn-secondary" onclick="speakLast()">🔁 Repeat</button>
+      <button class="btn btn-secondary" onclick="copyLast()">📋 Copy</button>
+    </div>
+
+    <!-- History list -->
+    <div class="history-section">
+      <div class="history-header">
+        <h3>Session history</h3>
+        <span id="history-count" class="history-count">0 items</span>
+      </div>
+      <ul id="history-list" class="history-list" aria-label="Recognised text history" aria-live="polite">
+        <li class="history-empty">No text recognised yet.</li>
+      </ul>
+    </div>
+
+    <!-- TTS settings -->
+    <details class="settings-panel" id="settings-panel">
+      <summary>⚙ Voice settings</summary>
+      <div class="settings-grid">
+        <label for="tts-rate">Speed
+          <input id="tts-rate" type="range" min="80" max="300" value="175"
+                 oninput="document.getElementById('rate-val').textContent=this.value"
+                 onchange="updateTTS()" />
+          <span id="rate-val">175</span> wpm
+        </label>
+        <label for="tts-vol">Volume
+          <input id="tts-vol" type="range" min="0" max="100" value="100"
+                 oninput="document.getElementById('vol-val').textContent=this.value"
+                 onchange="updateTTS()" />
+          <span id="vol-val">100</span>%
+        </label>
+        <label for="voice-select">Voice
+          <select id="voice-select" onchange="updateTTS()" class="voice-select">
+            <option value="">Default</option>
+          </select>
+        </label>
+        <label class="theme-toggle-label">Theme
+          <button class="btn btn-secondary btn-sm" onclick="toggleTheme()">🌓 Toggle</button>
+        </label>
+      </div>
+    </details>
+
+  </section>
+</main>
+
+<!-- ── Feedback toast ───────────────────────────────────────────────────────── -->
+<div id="toast" class="toast" role="alert" aria-live="assertive"></div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>

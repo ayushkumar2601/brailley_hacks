@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>Natural_Braille_Character</folder>
+	<filename>116_3</filename>
+	<size>
+		<width>76</width>
+		<height>60</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>28</name>
+		<pose>Rear</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>3</xmin>
+			<ymin>5</ymin>
+			<xmax>33</xmax>
+			<ymax>57</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>42</name>
+		<pose>Rear</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>43</xmin>
+			<ymin>5</ymin>
+			<xmax>72</xmax>
+			<ymax>56</ymax>
+		</bndbox>
+	</object>
+</annotation>

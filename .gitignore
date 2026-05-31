@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Virtual environments
+.venv/
+venv/
+venv2/
+venv_audit/
+env/
+ENV/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment variables (secrets)
+.env
+.env.*
+!.env.example
+
+# BrailleScan Datasets, Training, & Evaluation
+datasets/
+training_data/
+evaluation/
+benchmarks/
+
+# Models & Checkpoints
+models/
+braille_ai/models/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.h5
+*.pkl
+
+# Debug & Temporary Captures
+debug/
+braille_ai/temp/
+braille_ai/cells/
+debug_*.jpg
+debug_*.png
+
+# OCR working folders
+OCR Raw Data/
+OCR Predictions/
+Page image files with rectangles/
+
+# Logs, Reports & Caches
+logs/
+*.log
+reports/
+cache/
+temp/

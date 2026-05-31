@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Braille Real Dataset Metadata",
+  "type": "object",
+  "properties": {
+    "source": {
+      "type": "string",
+      "description": "Source of the image (e.g., online, scanned_pdf, mobile_photo, screenshot)",
+      "enum": ["online", "scanned_pdf", "mobile_photo", "screenshot"]
+    },
+    "quality": {
+      "type": "string",
+      "description": "Overall image quality",
+      "enum": ["high", "medium", "low"]
+    },
+    "contains_handdrawn": {
+      "type": "boolean",
+      "description": "True if the braille is hand-drawn, False if embossed or printed"
+    },
+    "lighting": {
+      "type": "string",
+      "description": "Lighting conditions of the capture",
+      "enum": ["even", "uneven", "shadowed", "overexposed"]
+    },
+    "resolution": {
+      "type": "array",
+      "description": "Image resolution [width, height]",
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "manual_labels": {
+      "type": "object",
+      "description": "Manual annotations for the image",
+      "properties": {
+        "expected_text": {
+          "type": "string",
+          "description": "The true ASCII text translation of the braille"
+        },
+        "binary_dot_labels": {
+          "type": "array",
+          "description": "Array of 6-bit arrays representing the cells",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "minItems": 6,
+            "maxItems": 6
+          }
+        },
+        "confidence": {
+          "type": "number",
+          "description": "Confidence in the manual labeling",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  },
+  "required": ["source", "quality", "contains_handdrawn", "lighting", "resolution"]
+}

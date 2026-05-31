@@ -1,0 +1,39 @@
+{
+  "version": "3.16.5",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "23456",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          4.0,
+          4.5
+        ],
+        [
+          61.099999999999994,
+          92.0
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "139_11.jpg",
+  "imageData": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABgAEADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDuzlRzzSfhRyevSgkCuE0Bs5yelAO7tSO2U460isxPy0ATRR7zitCK2DRjiqUThQTU41ALnaaaVwuLcQYXpVMxgDgU6XUt+VPT+VQrKSOD8v1oasO4EndijjPNIeWOKXy2z0pCGsQWwKcrBcDFAHPSmjJP0oAHY7Tis6acxOc8VqMquuO9U5bTzPvc01oOxQ+0NK+0c571oRL8q9abHaqmMLg1YAC8fypXuFiyiZJq0tuSmarRsquc1b+1IqYSnYRWlhx8oyGzUBG1gKfPfB22sMN61GpBGe9IBVHzZqZFyelRruJ9qtQuq5JxQMY0BC5qo65bjir818oUrgVRMokbiqUEkFxGcgdvrVZpyrcEj61O8XPynmqk1rJK3LflTEM8xmkweRWgg+QGqkFp5ZySTV4DCioYDXbYuRUc0p2cHFSlSe1RNEWbBFAFGS4kYhR0qzBnHTFSfZQO1PVdrdKerAsJASasraLjkCoY5FD9eKsG8j8pxjBFOLuBXkt8MQOmKhz8x4+ntUstwrJlTk+lQZ4BxSe4EilicVOkeRkYzUCYzk1Yi2qc9qQEckJA98VFtwOauyXMI4B596oGQMapIBC2AcCqssxzjOAetWSeKqyxFyRjk0RQFaOY+ZgHNaij5FFVIbby+dozVtchaGgHDAHNMlufLjwcCk471XlUuvSpsBA1wEDPu3e1S2jtIwYggGqjWhLg4P4VpQKEUAdh3qk0B//Z",
+  "imageHeight": 96,
+  "imageWidth": 64
+}

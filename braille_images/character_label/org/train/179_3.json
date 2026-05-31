@@ -1,0 +1,39 @@
+{
+  "version": "3.16.5",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "123",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          1.5,
+          2.700000000000003
+        ],
+        [
+          37.900000000000006,
+          62.400000000000006
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "179_3.jpg",
+  "imageData": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABAACkDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0/wAd/EPSPAVlFLfiSe5nz5FrFjc+OrEngAf/AKs81zHgz456P4p1iLSruwl0y6uG2QFpRJHI3Zd2BgnsMYz35FcL+0Zo98viTTdZMbNp72gtg4yQsiuzEH0yGGPXB9K8w8HaPf674t0yx09HadrhHLKP9WqkEuT2AHNAH28KWkXOOwpaACiiigCK4toLy3e3uYY5oXGHjkUMrD3B61U0zQtJ0VXXS9Ms7IP9/wCzQLHu+uBzXD/FL4pp4CSCzs7aO61W5QyKkpISJM4DNjk5IIABHQ81xfgn4/Xmo6/b6b4js7RIbmQRR3NsrJ5bE4G4EnIzgZ4x15oA98opByKWgAooooA8E+PvgjVtS1C08SabbTXcMduLe4jiTc8eGZg2ByR8xye2BXmfgDwFrfifxHZrDZTxWcMyvcXToVRFBBOCerY6Adc9hzX2McZ96TigBVyBzS0CigAooooA8W+N/wASNV8M3VpoOiTG1uZoftE9yoBYKWKqq56cq2T16YrzrwJ8XvE2l+I7OLU9Sn1HTp5ljnjuW3soY43Kx5BGc4zg9PceqfGH4W3njSW11fRnjOo28XkyQSttE0eSV2k8AgluvBz1GOeD8B/A7xA/iC1vfEcCWNhayrK0RlV3mKnIUbSQAT1Oc+lAH0qvSlpq9KdQAUUUUAf/2Q==",
+  "imageHeight": 64,
+  "imageWidth": 41
+}

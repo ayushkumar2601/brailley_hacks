@@ -1,0 +1,39 @@
+{
+  "version": "3.16.5",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "12356",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          3.700000000000003,
+          8.200000000000003
+        ],
+        [
+          35.80000000000001,
+          54.7
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "280_1.jpg",
+  "imageData": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAA8ACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwClEhEDqEJGPmNRxkbPlkCqD0rUs4TcTeUhAU/erL1TxXo2nanHZiJmVSN7jGPerMyeF+w9aeW+8p/vVZuIYSsN1atuikAIx2zUE4G8H1NAEZbD7R2op0qASHFFNAVftE8VlcNbthyvXPIrym7jvDcymaGZnZjj5CQea9ctreORWDvtVvvVzd94utbXVEiFokkMJ5bNTcaRoeEJL0aOILrg7soG7Ctgq7XAiKtuHXI4rRs30660w60dqwRpkD/a9K5Kx+IUcmv7bi1UWkh2ht3rxSuNo3LvKscY+oNFS6usUc+bbBgblCPSimSZsy7tPnQyBWcYB9K86ufDOsrMypbSOkjHDY65r0+E28UUklyP3QHPtXB6h4yvG1LfblBBC3yg98cUrFJmnDY6onhh9NVmLZ3eUBz06VysPhvWpZUAsJkCMN2R0r19Nc0hfB39sEqLzG3bxycelcBYeObz+1FeZYxHMcEAdAeKVimzqLRJIrOGKSTcVXH0oq5KkJbzYG3RvyOaKpEGbeB5rV4c/I4wea4a48KTiY7GyhOc56V2sozLihjwB2piMSTRC2lC08xjjnHvWDH4buheIHPyKeua7vAB49Kqu586gZpWyrDaQxKfurRUEbHK80UxH//Z",
+  "imageHeight": 60,
+  "imageWidth": 40
+}

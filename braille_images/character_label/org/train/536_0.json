@@ -1,0 +1,107 @@
+{
+  "version": "3.16.5",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "145",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          149.9,
+          5.899999999999999
+        ],
+        [
+          176.9,
+          53.900000000000006
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          197.3,
+          6.600000000000001
+        ],
+        [
+          223.2,
+          53.0
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          99.2,
+          5.799999999999997
+        ],
+        [
+          128.5,
+          52.0
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "3",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          51.4,
+          8.799999999999997
+        ],
+        [
+          78.9,
+          52.3
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "3",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          2.5999999999999996,
+          9.899999999999999
+        ],
+        [
+          32.3,
+          53.099999999999994
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "536_0.jpg",
+  "imageData": "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",
+  "imageHeight": 60,
+  "imageWidth": 226
+}

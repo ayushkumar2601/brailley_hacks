@@ -1,0 +1,90 @@
+{
+  "version": "3.16.5",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "1235",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          3.299999999999997,
+          7.899999999999999
+        ],
+        [
+          32.099999999999994,
+          51.0
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "135",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          45.5,
+          7.899999999999999
+        ],
+        [
+          74.1,
+          52.400000000000006
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "135",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          87.5,
+          9.200000000000003
+        ],
+        [
+          118.4,
+          51.5
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "134",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          131.1,
+          8.5
+        ],
+        [
+          158.7,
+          51.599999999999994
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "331_1.jpg",
+  "imageData": "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",
+  "imageHeight": 60,
+  "imageWidth": 161
+}

@@ -1,0 +1,90 @@
+{
+  "version": "3.16.5",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "13456",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          52.0,
+          4.600000000000001
+        ],
+        [
+          86.0,
+          57.099999999999994
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "135",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          98.8,
+          4.899999999999999
+        ],
+        [
+          131.7,
+          56.099999999999994
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "136",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          147.0,
+          4.700000000000003
+        ],
+        [
+          177.1,
+          57.099999999999994
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "6",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          7.100000000000001,
+          7.299999999999997
+        ],
+        [
+          39.0,
+          57.0
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "144_1.jpg",
+  "imageData": "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",
+  "imageHeight": 60,
+  "imageWidth": 180
+}

@@ -1,0 +1,73 @@
+{
+  "version": "3.16.5",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "3456",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          61.400000000000006,
+          8.700000000000003
+        ],
+        [
+          99.4,
+          56.900000000000006
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          108.6,
+          8.299999999999997
+        ],
+        [
+          140.9,
+          57.599999999999994
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "36",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          8.899999999999999,
+          5.799999999999997
+        ],
+        [
+          48.5,
+          56.5
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "408_0.jpg",
+  "imageData": "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",
+  "imageHeight": 60,
+  "imageWidth": 153
+}

@@ -1,0 +1,25 @@
+# Web framework
+flask==2.3.3
+flask-cors==4.0.0
+
+# Image processing
+pillow==10.1.0
+numpy==1.24.4
+opencv-python==4.8.1.78
+
+# Deep learning (CNN model)
+torch==2.1.0
+torchvision==0.16.0
+
+# ML utilities
+scikit-learn==1.3.2
+
+# AI correction
+groq==0.4.2
+python-dotenv==1.0.0
+
+# Text-to-speech
+pyttsx3==2.90
+
+# Utilities
+requests==2.31.0

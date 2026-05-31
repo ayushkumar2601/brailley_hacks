@@ -1,0 +1,90 @@
+{
+  "version": "3.16.5",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "1235",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          2.299999999999997,
+          9.700000000000003
+        ],
+        [
+          30.0,
+          56.0
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "135",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          43.900000000000006,
+          9.5
+        ],
+        [
+          72.4,
+          55.5
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "135",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          86.5,
+          10.600000000000001
+        ],
+        [
+          115.30000000000001,
+          55.8
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "134",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          128.5,
+          11.399999999999999
+        ],
+        [
+          158.4,
+          55.2
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "320_2.jpg",
+  "imageData": "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",
+  "imageHeight": 60,
+  "imageWidth": 162
+}

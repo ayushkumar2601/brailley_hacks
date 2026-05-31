@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>Natural_Braille_Character</folder>
+	<filename>490_1</filename>
+	<size>
+		<width>49</width>
+		<height>60</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>52</name>
+		<pose>Rear</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>8</xmin>
+			<ymin>6</ymin>
+			<xmax>38</xmax>
+			<ymax>50</ymax>
+		</bndbox>
+	</object>
+</annotation>
