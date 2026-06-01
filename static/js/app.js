@@ -83,6 +83,11 @@ function showLivePreview() {
 
 // ── Poll server frame (OpenCV fallback) ───────────────────────────────────────
 async function pollFrame() {
+  // Skip frame polling during demo mode
+  if (typeof isDemoMode !== 'undefined' && isDemoMode) {
+    setTimeout(pollFrame, 500);
+    return;
+  }
   if (!browserCameraActive) {
     try {
       const res  = await fetch('/api/frame');
@@ -294,6 +299,9 @@ async function pollHistory() {
 }
 
 function updateStatus(data) {
+  // Skip status updates during demo mode to preserve demo UI state
+  if (typeof isDemoMode !== 'undefined' && isDemoMode) return;
+
   const quality = data.quality || 'UNKNOWN';
   const stats   = data.stats   || {};
 

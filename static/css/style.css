@@ -749,4 +749,255 @@ main {
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); border-radius: 3px; }
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   DEMO MODE STYLES
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Try Demo button — animated gradient glow ────────────────────────────── */
+.btn-demo {
+  background: linear-gradient(135deg, #f59e0b, #ef4444, #ec4899, #8b5cf6);
+  background-size: 300% 300%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 9px 20px;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  animation: demo-btn-gradient 3s ease infinite, demo-btn-pulse 2s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.4), 0 0 60px rgba(236, 72, 153, 0.15);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  letter-spacing: 0.3px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-demo:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.5), 0 0 80px rgba(236, 72, 153, 0.25);
+}
+.btn-demo:active {
+  transform: scale(0.97);
+}
+.btn-demo::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent 0deg, rgba(255,255,255,0.15) 60deg, transparent 120deg);
+  animation: demo-btn-shine 3s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes demo-btn-gradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes demo-btn-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.4), 0 0 60px rgba(236, 72, 153, 0.15); }
+  50%      { box-shadow: 0 0 30px rgba(245, 158, 11, 0.6), 0 0 80px rgba(236, 72, 153, 0.3); }
+}
+@keyframes demo-btn-shine {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Demo Mode badge (corner overlay on camera) ──────────────────────────── */
+.demo-mode-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: none;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.9), rgba(236, 72, 153, 0.9));
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  z-index: 15;
+  box-shadow: 0 2px 12px rgba(245, 158, 11, 0.4);
+  animation: badge-float 2s ease-in-out infinite;
+  backdrop-filter: blur(4px);
+}
+@keyframes badge-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-3px); }
+}
+
+/* ── Scan overlay ────────────────────────────────────────────────────────── */
+.demo-scan-overlay {
+  position: absolute;
+  inset: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(11, 13, 20, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 20;
+  animation: overlay-in 0.4s ease;
+}
+.demo-scan-overlay.active { display: flex; }
+
+@keyframes overlay-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.demo-scan-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Spinning ring */
+.demo-scan-ring {
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgba(99, 102, 241, 0.15);
+  border-top: 3px solid var(--accent);
+  border-right: 3px solid var(--accent2);
+  border-radius: 50%;
+  animation: demo-ring-spin 1s linear infinite;
+  position: absolute;
+}
+@keyframes demo-ring-spin {
+  to { transform: rotate(360deg); }
+}
+
+.demo-scan-step-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+  animation: demo-icon-bounce 0.6s ease-in-out;
+  z-index: 1;
+}
+@keyframes demo-icon-bounce {
+  0%   { transform: scale(0.5); opacity: 0; }
+  60%  { transform: scale(1.2); }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+.demo-scan-step-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.5px;
+  text-align: center;
+  animation: demo-text-appear 0.3s ease;
+}
+@keyframes demo-text-appear {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Progress bar */
+.demo-scan-progress-wrap {
+  width: 240px;
+  height: 6px;
+  background: rgba(99, 102, 241, 0.15);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.demo-scan-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2), var(--green));
+  background-size: 200% 100%;
+  border-radius: 3px;
+  transition: width 0.1s linear;
+  animation: demo-bar-shimmer 1.5s ease infinite;
+}
+@keyframes demo-bar-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.demo-scan-pct {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+}
+
+/* ── Demo TTS Controls ───────────────────────────────────────────────────── */
+.demo-tts-controls {
+  display: none;
+  gap: 8px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  align-items: center;
+  background: linear-gradient(135deg,
+    rgba(245, 158, 11, 0.06) 0%,
+    rgba(236, 72, 153, 0.04) 50%,
+    rgba(139, 92, 246, 0.06) 100%);
+  animation: fadeIn 0.4s ease;
+}
+.demo-tts-btn {
+  flex: 1;
+  min-width: 80px;
+  justify-content: center;
+}
+.demo-tts-btn-icon {
+  font-size: 0.9rem;
+}
+
+/* ── Demo Invite message ─────────────────────────────────────────────────── */
+.demo-invite {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(236, 72, 153, 0.08));
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  animation: fadeIn 0.5s ease;
+}
+.demo-invite-icon {
+  font-size: 1.1rem;
+  animation: demo-btn-pulse 2s ease-in-out infinite;
+}
+
+/* ── Demo history item highlight ─────────────────────────────────────────── */
+.demo-history-item {
+  border-color: rgba(245, 158, 11, 0.3) !important;
+  background: linear-gradient(135deg,
+    rgba(245, 158, 11, 0.06),
+    rgba(139, 92, 246, 0.04)) !important;
+}
+.demo-history-item:hover {
+  border-color: rgba(245, 158, 11, 0.5) !important;
+}
+
+/* ── Scanline animation over camera during demo ──────────────────────────── */
+.demo-scan-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), var(--accent2), transparent);
+  animation: demo-scanline 2s ease-in-out infinite;
+  opacity: 0.6;
+}
+@keyframes demo-scanline {
+  0%   { top: 0%; }
+  50%  { top: 100%; }
+  100% { top: 0%; }
+}

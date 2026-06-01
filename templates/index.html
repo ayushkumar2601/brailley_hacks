@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BrailleScan — AI Braille Reader</title>
+  <title>DotVision — AI Braille Reader</title>
   <link rel="stylesheet" href="/static/css/style.css" />
 </head>
 <body>
@@ -17,7 +17,7 @@
         <span class="logo-dot"></span><span class="logo-dot"></span>
         <span class="logo-dot"></span><span class="logo-dot"></span>
       </div>
-      <span class="logo-title">Braille<strong>Scan</strong></span>
+      <span class="logo-title">Dot<strong>Vision</strong></span>
       <span class="logo-tag">AI</span>
     </div>
     <div class="header-status">
@@ -39,6 +39,7 @@
     <div class="panel-header">
       <h2>Live Camera</h2>
       <div class="cam-controls">
+        <button id="btn-demo"    class="btn btn-demo"      onclick="startHackathonDemo()">🚀 Try Demo</button>
         <button id="btn-camera"  class="btn btn-primary"   onclick="startBrowserCamera()">📷 Allow Camera</button>
         <button id="btn-upload"  class="btn btn-secondary" onclick="triggerUpload()">📁 Upload Image</button>
         <button id="btn-pause"   class="btn btn-secondary" onclick="togglePause()">⏸ Pause</button>
@@ -57,6 +58,10 @@
         <div class="no-camera-icon">⠿</div>
         <p>Click <strong>Allow Camera</strong> to start live scanning<br>
         or <strong>Upload Image</strong> to process a photo.</p>
+        <div class="demo-invite">
+          <span class="demo-invite-icon">⚡</span>
+          <span>Demo Mode: Experience DotVision without a Braille document.</span>
+        </div>
         <small>Video only — no microphone needed.</small>
       </div>
       <!-- Upload overlay (shown while processing) -->
@@ -116,7 +121,7 @@
 
     <!-- Action buttons -->
     <div class="action-row">
-      <button class="btn btn-secondary" onclick="runDemo('hello')">🧪 Demo</button>
+      <button class="btn btn-secondary" id="btn-exit-demo" onclick="exitDemoMode()" style="display:none">✖ Exit Demo</button>
       <button class="btn btn-secondary" onclick="speakHistory()">📖 Read All</button>
       <button class="btn btn-secondary" onclick="speakLast()">🔁 Repeat</button>
       <button class="btn btn-secondary" onclick="copyLast()">📋 Copy</button>
@@ -167,5 +172,6 @@
 <div id="toast" class="toast" role="alert" aria-live="assertive"></div>
 
 <script src="/static/js/app.js"></script>
+<script src="/static/js/demo.js"></script>
 </body>
 </html>
